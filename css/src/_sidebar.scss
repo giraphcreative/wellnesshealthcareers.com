@@ -1,0 +1,50 @@
+
+
+.sidebar {
+	background-color: $grey-light;
+	padding: 25px;
+	margin: 0;
+	transition: 500ms all ease-in-out;
+
+	@include respond-to( 768px ) {
+		width: 25%;
+		padding: 15px 25px;
+	}
+
+	.widget {
+		padding: 5px 0;
+		font-size: 15px;
+
+		@include respond-to( 768px ) {
+			padding: 10px 0;
+		}
+
+		h4 {
+			@include font-bold;
+			background: $forest;
+			color: white;
+			padding: 15px 15px 7px;
+			font-size: 20px;
+			font-style: normal;
+		}
+
+		ul {
+			li {
+				a {
+					display: block;
+					background-color: transparent;
+					padding: 5px 15px;
+					transition: 300ms background-color ease-in-out;
+					color: $forest;
+					text-decoration: none;
+
+					&:hover {
+						background-color: lighten( $grey-light, 5% );
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+

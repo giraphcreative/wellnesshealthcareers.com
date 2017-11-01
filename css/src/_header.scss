@@ -1,0 +1,196 @@
+
+
+header {
+	text-align: center;
+	position: relative;
+	background: url(../img/bg-paper.jpg) center center no-repeat;
+	background-size: cover;
+	@include clearfix;
+
+	.logo {
+		padding: 10px 20px;
+
+		@include respond-to( 768px ) {
+			float: left;
+			padding: 20px;
+			max-width: 40%;
+		}
+	}
+
+	nav {
+		@include clearfix;
+		position: relative;
+
+		@include respond-to( 768px ) {
+			position: absolute;
+			bottom: 10px;
+			right: 20px;
+			height: 60px;
+		}
+
+		ul.nav-menu {
+			position: relative;
+
+			@include respond-to( 768px ) {
+				float: right;
+				height: 60px;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -43px;
+					bottom: 0;
+					width: 43px;
+				}
+			}
+			
+			li {
+				@include respond-to( 768px ) {				
+					display: inline-block;
+					position: relative;
+				}
+
+				a {
+					@include font-bold;
+					display: block;
+					text-transform: uppercase;
+					padding: 10px 5px;
+					font-size: 24px;
+					line-height: 24px;
+					color: $green-dark;
+					text-align: center;
+					text-decoration: none;
+					width: 100%;
+					transition: 300ms background-color ease-in-out;
+
+					@include respond-to( 768px ) {
+						display: inline-block;
+						width: auto;
+						padding: 20px 10px;
+						letter-spacing: 1px;
+					}
+
+					@include respond-to( 1024px ) {
+						padding: 20px;
+					}
+				}
+
+				&:hover, &:focus, &.open {
+					ul.sub-menu {
+						display: block;
+					}
+				}
+
+				ul.sub-menu {
+					display: none;
+					margin-bottom: 3px;
+
+					@include respond-to( 768px ) {
+						position: absolute;
+						right: 0;
+						top: 60px;
+						width: 200px;
+						z-index: 2000;
+						background: lighten( $forest, 5% );
+						@include clearfix;
+					}
+
+					li {
+						display: block;
+						width: 100%;
+
+						a {
+							padding: 7px 10px;
+							font-size: 15px;
+							line-height: 18px;
+							display: block;
+
+							@include respond-to( 768px ) {
+								padding: 10px;
+
+								&:hover {
+									background: lighten( $forest, 10% );
+								}
+							}
+
+							@include respond-to( 1220px ) {
+								padding: 15px 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slogan {
+		display: block;
+		text-align: center;
+		padding: 5px 20px;
+		color: $green;
+
+		@include respond-to( 768px ) {
+			position: absolute;
+			bottom: 70px;
+			right: 20px;
+			text-align: right;
+			font-size: 1.2em;
+
+		}
+	}
+
+	.search {
+		display: block;
+		display: relative;
+
+		@include respond-to( 768px ) {
+			position: absolute;
+			top: 30px;
+			right: 40px;
+			width: 20%;
+		}
+		
+		input[type=text] {
+			border: 1px solid $grey-light;
+			line-height: 40px;
+			width: 100%;
+			color: $green-dark;
+			padding: 0 20px;
+			
+			@include respond-to( 768px ) {
+				border-radius: 20px;
+				border: 2px solid $green;
+			}
+
+			@include respond-to( 1024px ) {
+				width: 90%;
+			}
+		}
+
+		input[type=image] {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+	.skip-content {
+		color: transparent;
+
+		@include respond-to( 768px ) {
+			position: absolute;
+			right: 30px;
+			top: 100px;
+		}
+	}
+}
+
+
+.header-border {
+	height: 30px;
+	background: url(../img/header-border.png) center center no-repeat;
+	background-size: cover;
+	@include clearfix;
+}
+

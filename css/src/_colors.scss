@@ -1,0 +1,28 @@
+
+
+// set colors
+$lime: #ADD153;
+$lime-dark: #A5C24A;
+$green: #83AA3F;
+$green-dark: #7A933B;
+$forest: #51652E;
+$grey: #9C9FA0;
+$grey-dark: darken( $grey, 30% );
+$grey-light: #E6E7E8;
+
+// link color
+$link-color: $forest;
+
+
+.bg-lime { background-color: $lime; color: white; }
+.bg-forest { background-color: $forest; color: white; }
+.bg-grey-light { background-color: $grey-light; color: white; }
+.bg-grey { background-color: $grey; color: white; }
+.bg-grey-dark { background-color: $grey-dark; color: white; }
+
+.text-lime { color: $lime; }
+.text-forest { color: $forest; }
+.text-grey-light { color: $grey-light; }
+.text-grey { color: $grey; }
+.text-grey-dark { color: darken( $grey, 30% ); }
+

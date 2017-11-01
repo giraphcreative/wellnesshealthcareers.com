@@ -1,0 +1,65 @@
+
+
+.home-pad {
+	a {
+		opacity: 1;
+		transition: 300ms all ease-in-out;
+		text-decoration: none;
+
+		h5 {
+			color: $forest;
+			text-transform: uppercase;
+		}
+
+		h5, img {
+			opacity: 1;
+			transition: 300ms opacity ease-in-out;
+		}
+
+		&:hover {
+			text-decoration: none;
+			
+			h5, img {
+				opacity: .85;
+			}
+		}
+	}
+
+	@include respond-to( 1024px ) {
+		padding: 40px 20px;
+	}
+	
+	&.icons {
+		@include respond-to( 600px ) {
+			padding: 40px 30px;
+		}
+	}
+
+	.quarter {
+		padding: 0;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		@include respond-to( 480px ) {
+			width: 50%;
+			float: left;
+		}
+
+		@include respond-to( 768px ) {
+			width: 25%;
+			margin: 0;
+		}
+
+		@include respond-to( 1024px ) {
+			padding: 0 10px;
+		}
+	}
+
+	.fifth {
+		padding: 0 10px;
+	}
+}
+
