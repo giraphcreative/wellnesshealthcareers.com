@@ -16,7 +16,7 @@
 	
 	<footer class="footer">
 		<div class="column first">
-			<p><span>WELLNESS HEALTH CAREERS</span><br>
+			<p><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-footer.png" class="footer-logo" /><br>
 				PMP 808<br>
 				16420 S.E. McGillivray Blvd., <br>
 				Suite 103<br>
@@ -27,7 +27,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 		<div class="column last">
-			<img src="<?php bloginfo( 'template_url' ); ?>/img/footer-tree.png"
+			<img src="<?php bloginfo( 'template_url' ); ?>/img/footer-tree.png" class="footer-tree" />
 		</div>
 	</footer><!-- #colophon -->
 

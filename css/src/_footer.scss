@@ -41,8 +41,8 @@ footer {
 
 		@include respond-to( 1024px ) {
 			width: 25%;
-			border-right: 2px solid $grey-dark;
-			min-height: 140px;
+			border-right: 2px solid $grey;
+			min-height: 150px;
 			padding-top: 20px;
 
 			&.first {
@@ -80,6 +80,10 @@ footer {
 
 	p {
 		padding: 0;
+	}
+
+	.footer-logo {
+		margin-bottom: 5px;
 	}
 }
 
