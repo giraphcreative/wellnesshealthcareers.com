@@ -2,7 +2,8 @@
 
 footer {
 	position: relative;
-	background: white;
+	background: url(../img/bg-paper.jpg) center center no-repeat;
+	background-size: cover;
 	color: $green;
 	padding: 20px 0 10px;
 	@include clearfix;
