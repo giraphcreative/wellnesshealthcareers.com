@@ -21,6 +21,7 @@
 				16420 S.E. McGillivray Blvd., <br>
 				Suite 103<br>
 				Vancouver, WA  98683<br>
+				<a href="tel:3605663610">(360)566-3610</a><br>
 				<a href="mailto:tonya@wellnesshealthcareers.com">tonya@wellnesshealthcareers.com</a></p>
 		</div>
 		<div class="column">
