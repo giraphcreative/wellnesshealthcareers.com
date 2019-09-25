@@ -1,3 +1,3 @@
-## Front Royal FCU's WordPress Theme
+## Wellness Health Careers' WordPress Theme
 
-&copy; 2016 Front Royal. All rights reserved.
+&copy; 2019 Wellness Health Careers. All rights reserved.
