@@ -17,10 +17,8 @@
 	<footer class="footer">
 		<div class="column first">
 			<p><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-footer.png" class="footer-logo" /><br>
-				PMP 808<br>
-				16420 S.E. McGillivray Blvd., <br>
-				Suite 103<br>
-				Vancouver, WA  98683<br>
+				7705 NE 14th Street<br>
+				Vancouver, WA 98664<br>
 				<a href="tel:3605663610">(360)566-3610</a><br>
 				<a href="mailto:tonya@wellnesshealthcareers.com">tonya@wellnesshealthcareers.com</a></p>
 		</div>
