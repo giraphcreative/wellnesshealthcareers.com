@@ -38,7 +38,6 @@ $expires_query = array(
 // if we have a type query
 $args['meta_query'] = $expires_query;
 
-
 query_posts( $args );
 
 $job_count = $wp_query->found_posts;
@@ -61,7 +60,9 @@ $job_count = $wp_query->found_posts;
 				<?php the_excerpt(); ?>
 			</div>
 			<div class="third job-info">
+				
 				<?php
+				print ( has_cmb_value( 'job_expires' ) ? "<p><label>Closing:</label> " . date( "n/j/Y", strtotime( get_cmb_value( 'job_expires' ) ) ) . "</p>" : '' );
 				print ( has_cmb_value( 'job_company' ) ? "<p><label>Company:</label><br> " . get_cmb_value( 'job_company' ) . "</p>" : '' );
 				?>
 			</div>
