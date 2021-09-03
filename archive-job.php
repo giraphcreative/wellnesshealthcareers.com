@@ -11,10 +11,9 @@ global $wp_query;
 // start building args for query_posts
 $args = array_merge( $wp_query->query_vars, array(
 	'post_type' => 'job',
-	'orderby' => 'meta_value',
-	'order' => 'ASC',
-	'meta_key' => '_p_job_expires',
-	'posts_per_page' => 1000
+	'orderby' => 'date',
+	'order' => 'DESC',
+	'posts_per_page' => -1
 ) );
 
 
