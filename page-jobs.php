@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: One-column
+Template Name: Jobs
 */
 
 get_header();
