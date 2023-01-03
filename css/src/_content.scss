@@ -116,24 +116,12 @@
 	@extend .content-style;
 	padding: 40px 20px;
 
-	.frame-class {
-		margin: 20px -20px -40px -20px;
-	}
-
 	@include respond-to( 1024px ) {
 		padding: 30px 40px 50px;
-		
-		.frame-class {
-			margin: 20px -40px -50px -40px;
-		}
 	}
 
 	@include respond-to( 1220px ) {
 		padding: 40px 60px 60px;
-		
-		.frame-class {
-			margin: 20px -40px -60px -40px;
-		}
 	}
 }
 
