@@ -6,7 +6,7 @@ define( "CMB_PREFIX", "_p_" );
 
 
 // add post types
-include( "library/post-type/job.php" );
+// include( "library/post-type/job.php" );
 
 
 // include some theme-related things
