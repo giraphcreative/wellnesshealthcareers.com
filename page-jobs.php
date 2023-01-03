@@ -25,6 +25,8 @@ get_header();
 
 <?php
 
+print do_shortcode( '[oscp]' );
+
 get_footer();
 
 ?>
