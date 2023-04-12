@@ -6,20 +6,11 @@ Template Name: Page - Home
 
 get_header();
 
-?>
+the_showcase();
 
-	<?php the_showcase(); ?>
+the_ad_showcase();
 
-	<div class="home-pad bg-grey-light group" role="main">
-		
-		<?php the_ad_showcase(); ?>
-
-	</div>
-
-	<?php the_footer_showcase(); ?>
-
-<?php 
+the_footer_showcase();
 
 get_footer();
 
-?>

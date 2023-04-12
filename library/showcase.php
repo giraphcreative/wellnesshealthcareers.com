@@ -66,25 +66,23 @@ function the_showcase() {
 // ad showcase
 function the_ad_showcase() {
 
+	// get the ad showcase
 	$ads = get_cmb_value( 'ad_showcase' );
 
-	if ( !empty( $ads[0]['link'] ) && !empty( $ads[0]['image'] ) ) { ?>
-	<div class="third">
-		<a href="<?php print $ads[0]['link']; ?>"><img src="<?php print $ads[0]['image']; ?>" alt="<?php print ( !empty( $ads[0]['alt-text'] ) ? $ads[0]['alt-text'] : "Link to " . $ads[0]['link'] ); ?>"></a>
-	</div>
-	<?php } 
+	// if it's not empty
+	if ( !empty( $ads ) ) {
+		?><div class="icons"><?php
+		$count = 0;
 
-	if ( !empty( $ads[1]['link'] ) && !empty( $ads[1]['image'] ) ) { ?>
-	<div class="third">
-		<a href="<?php print $ads[1]['link']; ?>"><img src="<?php print $ads[1]['image']; ?>" alt="<?php print ( !empty( $ads[1]['alt-text'] ) ? $ads[1]['alt-text'] : "Link to " . $ads[1]['link'] ); ?>"></a>
-	</div>
-	<?php } 
-
-	if ( !empty( $ads[2]['link'] ) && !empty( $ads[2]['image'] ) ) { ?>
-	<div class="third">
-		<a href="<?php print $ads[2]['link']; ?>"><img src="<?php print $ads[2]['image']; ?>" alt="<?php print ( !empty( $ads[2]['alt-text'] ) ? $ads[2]['alt-text'] : "Link to " . $ads[2]['link'] ); ?>"></a>
-	</div>
-	<?php } 
+		// loop through up to 4 ads and display them
+		foreach ( $ads as $ad ) {
+			if ( $count < 4 ) {
+				?><a class="icon <?php print $ad['color'] ?>" href="<?php print $ad['link']; ?>"><?php print $ad['alt-text']; ?></a><?php
+			}
+			$count++;
+		}
+		?></div><?php
+	}
 
 }
 

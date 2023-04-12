@@ -1,14 +1,8 @@
 <?php
 
 
-// init cmb2
-// require_once( 'cmb2/init.php' );
-
-
-
 // add metabox(es)
 function page_metaboxes( $meta_boxes ) {
-
 
     // showcase metabox
     $showcase_metabox = new_cmb2_box( array(
@@ -80,15 +74,18 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $ad_showcase_metabox->add_group_field( $ad_showcase_metabox_group, array(
-        'name' => 'Image',
-        'desc' => 'Upload a 300x300 pixel image to be used for this ad. If you do not adhere to that restriction, it will be imposed and may not look right.',
-        'id'   => 'image',
-        'type' => 'file',
-        'preview_size' => array( 200, 200 )
+        'name' => 'Color',
+        'id'   => 'color',
+        'type' => 'select',
+        'options' => array(
+            'lime' => 'Lime',
+            'forest' => 'Forest',
+            'grey' => 'Grey'
+        )
     ) );
 
     $ad_showcase_metabox->add_group_field( $ad_showcase_metabox_group, array(
-        'name' => 'Alt Text',
+        'name' => 'Text',
         'desc' => 'Specify alt text for the icon.',
         'id'   => 'alt-text',
         'type' => 'text',
